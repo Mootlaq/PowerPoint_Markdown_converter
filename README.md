@@ -1,6 +1,13 @@
 # PowerPoint_Markdown_converter
 This is a CLI application that converts Powerpoint slides into Markdown. I built this with the idea of importing the final output to Roam Research. This influenced a lot of the design decisions (and probably will in future versions.) 
 
+## Usage 
+to use the app simply type this command in your terminal:
+`python pptx2markdown.py [powerpoint filename]`
+
+A folder named '[ppt filename]_converted' will be generated. in it, you'll find the generated markdown file and images folder.
+
+## Output
 The format outpul looks like this:
 
 - Slide number 1
