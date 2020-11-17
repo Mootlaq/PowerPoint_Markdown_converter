@@ -34,7 +34,7 @@ A folder named '[ppt filename]_converted' will be generated. in it, you'll find 
 ## Output
 The format outpul looks like this:
 
-![image-20201118015709747](image-20201118021155493.png)
+![image-20201118015709747](media/image-20201118021155493.png)
 
 It doesn't matter how the powerpoint is structured, this is the final output. All texts whether they are titles or bullet points or simple text will be treated the same. More formatting can be applied in Roam Research itself. 
 
