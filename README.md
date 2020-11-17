@@ -4,11 +4,13 @@ This is a CLI application that converts Powerpoint slides into Markdown. I built
 I created this thanks to [Rob Haisfield](https://github.com/classicrob) who floated the idea on one of Roam's Slack channels.
 
 ## Installation
-As you can see, all what you need is the `pptx2markdown.py` file. So, simply clone the repo to your machine. You might need some libraries for the script to run successfully. The script use the libraries below so if make sure you install them. I included the pip command to install them in case you don't have them in your machine.
+Besides the `pptx2markdown.py` file, you might need to install some libraries for the script to run successfully. The script use the libraries below so make sure you install them. I included the pip install command for each library in case you don't have them in your machine.
 
 * Pillow
 
-  * `pip install Pillow`
+  * ```python
+    pip install Pillow
+    ```
 
 * python-pptx
 
@@ -27,7 +29,6 @@ Running the script is very easy:
 
 - Move the powerpoint file to the same directory as the .py file
   - This is important. The two files need to be in the same folder.
-- 
 - In your terminal, type `python pptx2markdown.py [powerpoint filename]`
   - Make sure to run the command from the same directory as the two files.
 
