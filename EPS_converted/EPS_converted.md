@@ -1,0 +1,41 @@
+
+
+
+ - Slide number 1
+	 - EPS Design Update
+ - Slide number 2
+	 - Schematic
+	 - Solar Panel on each side
+	 - MPPT Charge Controller
+	 - Battery
+	 - Step Down Voltage 3.3V
+	 - Step Up Voltage 5 (currently using 6)
+ - Slide number 3
+	 - Solar Cells 
+	 - panel on each side
+	 - Currently working on a 9V panel
+	 - Consumption?! 
+ - Slide number 4
+	 - MPPT Charge Controller
+	 - Charges the battery
+	 - MPPT
+	 - Maximum power point tracking
+	 - Purpose: Help get the maximum power out of panels. 
+	 - The Board: Sunny Buddy
+	 - Input voltage: 6-20V 
+	 - What is the power path? 
+ - Slide number 5
+	 - Batteries
+	 - 3.7V
+	 - 1100Ah 
+	 - Might use 2000Ah instead of 1100Ah
+ - Slide number 6
+	 - Converters 
+	 - Subsystems
+	 - After MPPT
+	 - Battery 
+	 - Sensors
+	 - Two converters: 
+	 - 3.3V 
+	 - 5V
+	 - Now using 6V 
