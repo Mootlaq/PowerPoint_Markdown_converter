@@ -33,7 +33,17 @@ def main():
     for slide in prs.slides:
         texts = []
         slide_count += 1
-        
+
+        slide_parts = list(slide._part.related_parts.keys())
+        for part in slide_parts:
+            image_part = slide._part.related_parts[part]
+            if type(image_part) == pptx.parts.image.ImagePart or pptx.opc.package.Part:
+                file_startswith = image_part.blob[0:1]
+                if file_startswith == b'\x89' or file_startswith == b'\xff' or file_startswith == b'\x47':
+                    with open('{}/image{}_slide{}.png'.format(images_path, picture_count, slide_count), 'wb') as f:
+                        f.write(image_part.blob)
+                        picture_count += 1
+                        
         for shape in slide.shapes:
             if shape.has_text_frame:
                 if '\n' in shape.text:
@@ -45,10 +55,6 @@ def main():
                     continue
                 else:
                     texts.append(shape.text)
-            elif shape.shape_type == MSO_SHAPE_TYPE.PICTURE:
-                with open('{}/image{}_slide{}.png'.format(images_path, picture_count, slide_count), 'wb') as f:
-                    f.write(shape.image.blob)
-                    picture_count += 1
             ppt_dict[slide_count] = texts
 
     ppt_content = ''
